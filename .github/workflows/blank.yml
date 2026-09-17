@@ -1,7 +1,22 @@
 name: job
 on: workflow_dispatch
 jobs:
-  echo:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+    - run: |
+             echo "hello world"
+             echo "world2"
+
+  test:
+   runs-on: ubuntu-latest
+   steps:
+    - run: |
+             echo "hello world"
+             echo "world2"
+
+  
+  deploy:
    runs-on: ubuntu-latest
    steps:
     - run: |
